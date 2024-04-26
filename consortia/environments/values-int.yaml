@@ -21,6 +21,8 @@ server:
   endpoints:
     management:
       authKeyAlias: "bdrs-mgmt-api-key"
+  env:
+    EDC_IAM_TRUSTED-ISSUER_PORTAL-ISSUER_ID: "did:web:dim-static-prod.dis-cloud-prod.cfapps.eu10-004.hana.ondemand.com:dim-hosted:2f45795c-d6cc-4038-96c9-63cedc0cd266:holder-iatp"
   ingresses:
     - enabled: true
       hostname: "bpn-did-resolution-service.int.demo.catena-x.net"
